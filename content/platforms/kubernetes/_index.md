@@ -1,6 +1,6 @@
 ---
 Title: Getting Started with Redis Enterprise Software using Kubernetes
-description: 
+description:
 weight: 30
 alwaysopen: false
 categories: ["Platforms"]
@@ -26,8 +26,6 @@ We will go through 4 steps to set up our cluster with Redis Enterprise:
 - Step 2: Deploy the Redis Enterprise containers to Kubernetes cluster
 - Step 3: Setup Redis Enterprise cluster
 - Step 4: Create a Redis database and test your connectivity
-
-_Note: The deployment is deliberately simplified and is great for getting started with Kubernetes and Redis Enterprise fast. It certainly isn't intended for production use._
 
 ### Requirements
 
