@@ -7,7 +7,7 @@ categories: ["Platforms"]
 aliases: /rs/getting-started/getting-started-kubernetes/
          /rs/administering/kubernetes/
 ---
-Kubernetes provides simpler orchestration with containers and has been widely adapted. It is simple to get a Redis Enterprise cluster on Kubernetes with the new Redis Enterprise Docker container.
+Kubernetes provides simpler orchestration with containers and has been widely adapted. It is simple to get a Redis Enterprise cluster on Kubernetes with the Redis Enterprise Operator deployment.
 
 ## What is Redis Enterprise?
 
@@ -33,7 +33,7 @@ The steps below were performed using the latest [Google Cloud sdk](https://cloud
 
 ## Step 1: Create a Kubernetes cluster on Google Cloud
 
-Lets first get your commandline environment set up.
+Let's first get your CLI environment set up.
 
 - First authenticate to your Google Cloud environment.
 
