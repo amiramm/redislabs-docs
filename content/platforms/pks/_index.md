@@ -14,7 +14,6 @@ Prerequisites:
 1. A [PKS cluster](https://docs.pivotal.io/runtimes/pks/1-4/create-cluster.html#create) with at least three nodes, each meeting the [minimum requirements for a development installation]({{< relref "/rs/administering/designing-production/hardware-requirements.md" >}}) in the case of a development environment. For production use-cases and large scale POCs, please use the Production level hardware recommendations. <!--- Reference a future article that will cover k8s cluster node requirements that include provisions for Services Rigger, Operator and cluster nodes -->
 1. The [kubectl package installed](https://kubernetes.io/docs/tasks/tools/install-kubectl/) at version 1.8 or higher
 1. The [PKS cli installed](https://docs.pivotal.io/runtimes/pks/1-4/installing-pks-cli.html)
-1. A
 
 ## Step 1: Login and prepare your PKS environment and PKS cluster
 1. Log in to PKS and into your PKS cluster:
