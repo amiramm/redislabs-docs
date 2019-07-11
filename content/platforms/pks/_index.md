@@ -165,7 +165,7 @@ Resolving deltas: 100% (94/94), done.
  ```
  $ kubectl get deployment -l name=redis-enterprise-operator
  ```
- A Typical response will look like this:
+ A typical response will look like this:
  ```
 
  NAME                        READY   UP-TO-DATE   AVAILABLE   AGE
@@ -260,7 +260,7 @@ Resolving deltas: 100% (94/94), done.
  ```
  $ kubectl apply -f your_cluster_name.yaml
  ```
- A Typical response will look like this:
+ A typical response will look like this:
  ```
 
  redisenterprisecluster.app.redislabs.com/rec-pks created
@@ -270,7 +270,7 @@ Resolving deltas: 100% (94/94), done.
  ```
  $ kubectl rollout status sts/rec-pks
  ```
- A Typical response will look like this:
+ A typical response will look like this:
  ```
 
  Waiting for 3 pods to be ready...
@@ -282,7 +282,7 @@ Resolving deltas: 100% (94/94), done.
  ```
  $ kubectl get rec
  ```
- A Typical response will look like this:
+ A typical response will look like this:
  ```
 
  NAME      AGE
@@ -325,9 +325,9 @@ In order to create your database, you will log in to the Redis Enterprise UI.
 
  1. First, determine you administrator password. It is stored in an opaque k8s secret named after the REC name. In this example:
  ```
- $ kubectl get secret/rec-pks
+ $ kubectl get secret/rec-pks -o yaml
  ```
- A Typical response will include the following lines:
+ A typical response will include the following lines:
  ```
 
  apiVersion: v1
@@ -342,7 +342,7 @@ In order to create your database, you will log in to the Redis Enterprise UI.
  ```
  $ echo 'ZGdlaWw3Cg==' | base64 --decode
  ```
- A Typical response will include the following lines:
+ A typical response will include the following lines:
  ```
 
  dgeil7
@@ -354,7 +354,7 @@ In order to create your database, you will log in to the Redis Enterprise UI.
      ```
      $ kubectl get service/rec-pks-ui
      ```
-     A Typical response will include the following lines:
+     A typical response will include the following lines:
      ```
 
      service/rec-pks-ui   LoadBalancer   10.100.200.101   53.128.131.29   8443:31459/TCP               16m
@@ -366,7 +366,7 @@ In order to create your database, you will log in to the Redis Enterprise UI.
     ```
     $ kubectl port-forward rec-pks-0 8443
     ```
-    A Typical response will include the following lines:
+    A typical response will include the following lines:
     ```
 
     Forwarding from 127.0.0.1:8443 -> 8443
@@ -402,7 +402,7 @@ In order to create your database, you will log in to the Redis Enterprise UI.
   ```
   $ kubectl get service -l app=redis-enterprise-bdb
   ```
-  A Typical response will list all database services in the cluster, for example:
+  A typical response will list all database services in the cluster, for example:
   ```
 
   NAME                TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)     AGE
@@ -414,7 +414,7 @@ In order to create your database, you will log in to the Redis Enterprise UI.
   ```
   $ kubectl port-forward service/pks-test 14771
   ```
-  A Typical response will list all database services in the cluster, for example:
+  A typical response will list all database services in the cluster, for example:
   ```
 
   Forwarding from 127.0.0.1:14771 -> 14771
@@ -457,7 +457,7 @@ In order to create your database, you will log in to the Redis Enterprise UI.
    ```
    $ kubectl delete rec rec-pks
    ```
-   A Typical response will look like this:
+   A typical response will look like this:
    ```
 
    redisenterprisecluster.app.redislabs.com "rec-pks" deleted
@@ -467,7 +467,7 @@ In order to create your database, you will log in to the Redis Enterprise UI.
    ```
    $ kubectl delete deployment -l name=redis-enterprise-operator
    ```
-   A Typical response will look like this:
+   A typical response will look like this:
    ```
 
    deployment.extensions "redis-enterprise-operator" deleted
@@ -477,7 +477,7 @@ In order to create your database, you will log in to the Redis Enterprise UI.
    ```
    $ kubectl get all
    ```
-   A Typical response will look like this:
+   A typical response will look like this:
    ```
 
    No resources found.
@@ -487,7 +487,7 @@ In order to create your database, you will log in to the Redis Enterprise UI.
    ```
    $ kubectl delete namespace redis-enterprise
    ```
-   A Typical response will look like this:
+   A typical response will look like this:
    ```
 
    namespace "redis-enterprise" deleted.
